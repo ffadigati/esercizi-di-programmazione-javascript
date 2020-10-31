@@ -15,6 +15,9 @@
 
 var seconds = 12560;
 var hours = seconds/3600;
-var minutes = seconds/60;
+var remainSecFromHours = seconds % 3600;
+var minutes = remainSecFromHours/60;
+var remainSec = remainSecFromHours % 60;
 
-console.log (hours+' ore,' +minutes+' minuti e ' +seconds+' secondi.');
+
+console.log (Math.round(hours)+' ore, '+Math.round(minutes)+' minuti e ' +remainSec+' secondi.');

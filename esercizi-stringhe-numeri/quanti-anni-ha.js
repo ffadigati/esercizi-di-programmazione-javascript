@@ -11,3 +11,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var actualyear = 2020;
+var birthyear = 1995;
+
+var age = actualyear - birthyear;
+var remainingyears = 100 - age;
+
+console.log('età = '+age+', anni mancanti = '+remainingyears);

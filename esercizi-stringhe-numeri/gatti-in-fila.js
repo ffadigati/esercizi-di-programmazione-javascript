@@ -17,3 +17,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var totCats = 44;
+var catsPerRow = 6;
+
+var numberOfRows = totCats / catsPerRow;
+var necessaryTotCats = catsPerRow * Math.ceil(numberOfRows);
+var missingCats = necessaryTotCats - totCats;
+
+
+console.log('numero di file = '+Math.ceil(numberOfRows)+', gatti mancanti = '+missingCats);
